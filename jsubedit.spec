@@ -9,6 +9,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}-%{version}.tar.gz
+# Source0-md5:	e4201661bc61c99d7cd172740329334d
 URL:		http://alfa.imi.pcz.czest.pl/~subedit/
 Vendor:		Artur Sikora <subedit@alfa.imi.pcz.czest.pl>
 BuildRequires:	qt-devel >= 3.0.5
