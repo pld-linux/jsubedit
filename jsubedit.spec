@@ -2,7 +2,6 @@
 # _with_ra	- build in PLD Ra environment
 # TODO
 # - home page has only 0.1 version available
-# - Group window managers?
 # - program only in polish!
 Summary:	SubEdit - subtitles editor
 Summary(pl):	SubEdit - edytor napisów
@@ -10,7 +9,7 @@ Name:		jsubedit
 Version:	0.2
 Release:	1
 License:	GPL v2
-Group:		X11/Window Managers/Tools
+Group:		Applications/Editors		
 Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}-%{version}.tar.gz
 # Source0-md5:	e4201661bc61c99d7cd172740329334d
 URL:		http://subedit.prv.pl/polish/information.html
