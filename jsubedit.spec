@@ -29,9 +29,13 @@ wy³±cznie do edycji napisów.
 
 %prep
 %setup -q
+%{__perl} -pi -e 's/^\s*clear\s*$/#$&/' Makefile
 
 %build
-%{__make} CXXFLAGS="-I%{_includedir}/qt" LDFLAGS="-L%{_libdir}"
+%{__make} \
+	CXXFLAGS="-I%{_includedir}/qt" \
+	LDFLAGS="-L%{_libdir}" \
+	LIBS="-lqt-mt"
 
 %install
 rm -rf $RPM_BUILD_ROOT
