@@ -2,11 +2,11 @@ Summary:	SubEdit - subtitles editor
 Summary(pl):	SubEdit - edytor napisów
 Name:		jsubedit
 Version:	0.1
-Release:	0.9
-License:	GPL v2 ?
+Release:	1
+License:	distributable
 Group:		X11/Window Managers/Tools
 Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}%{version}src.tar.gz
-#Source1:	%{name}.desktop
+Source1:	%{name}.desktop
 URL:		http://alfa.imi.pcz.czest.pl/~subedit/
 Vendor:		Artur Sikora <subedit@alfa.imi.pcz.czest.pl>
 Patch0:		%{name}-makefile.patch
@@ -32,10 +32,13 @@ wy³±cznie do edycji napisów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	INSTALL_DIR=%{_bindir}
+
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Multimedia/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,3 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHYTAJTO.TXT
 %attr(755,root,root) %{_bindir}/*
+%{_applnkdir}/Multimedia/%{name}.desktop
