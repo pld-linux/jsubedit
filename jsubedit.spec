@@ -13,7 +13,6 @@ Patch0:		%{name}-makefile.patch
 BuildRequires:	qt-devel >= 3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/X11R6
 
 %description
 "just SubEdit" is the Linux port of SubEdit-Player program. It's meant
