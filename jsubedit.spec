@@ -28,7 +28,7 @@ only for subtitles edition.
 wy³±cznie do edycji napisów.
 
 %prep
-%setup -q 
+%setup -q
 
 %build
 %{__make} CXXFLAGS="-I%{_includedir}/qt" LDFLAGS="-L%{_libdir}"
