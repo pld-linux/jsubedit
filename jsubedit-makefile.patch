@@ -1,0 +1,23 @@
+--- ./Makefile.org	Tue Feb 19 23:57:12 2002
++++ ./Makefile	Thu Dec  5 09:38:39 2002
+@@ -25,16 +25,17 @@
+ 	@echo COMPILATION COMPLETE
+ 
+ $(TARGET): $(OBJ)
+-	$(CPP) $(OBJ) -o $(TARGET) -L$(LIB_DIR) $(LIBS)
++	$(CPP) $(OBJ) -o $(TARGET) -L$(LIB_DIR) $(LDFLAGS) $(LIBS)
+ 
+ .cpp.o:
+-	$(CPP) -c $< -I$(INC_DIR)
++	$(CPP) -c $< -I$(INC_DIR) $(CXXFLAGS)
+ 
+ %_moc.cpp: %.h
+ 	moc $< -o $@
+ 
+ install:
+-	cp ./jsubedit $(INSTALL_DIR)
++	install -d $(DESTDIR)$(INSTALL_DIR)
++	cp ./jsubedit $(DESTDIR)$(INSTALL_DIR)
+ 
+ clean:
+ 	rm -f $(OBJ)
