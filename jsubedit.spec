@@ -1,6 +1,9 @@
 # Conditional build:
 # _with_ra	- build in PLD Ra environment
-
+# TODO
+# - home page has only 0.1 version available
+# - Group window managers?
+# - program only in polish!
 Summary:	SubEdit - subtitles editor
 Summary(pl):	SubEdit - edytor napisów
 Name:		jsubedit
@@ -10,7 +13,7 @@ License:	GPL v2
 Group:		X11/Window Managers/Tools
 Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}-%{version}.tar.gz
 # Source0-md5:	e4201661bc61c99d7cd172740329334d
-URL:		http://alfa.imi.pcz.czest.pl/~subedit/
+URL:		http://subedit.prv.pl/polish/information.html
 Vendor:		Artur Sikora <subedit@alfa.imi.pcz.czest.pl>
 BuildRequires:	qt-devel >= 3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,13 +42,13 @@ wy³±cznie do edycji napisów.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Multimedia
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	INSTALL_DIR=%{_bindir}
 
-install %{name}.desktop $RPM_BUILD_ROOT%{_applnkdir}/Multimedia/
+install %{name}.desktop $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README
 %attr(755,root,root) %{_bindir}/*
-%{_applnkdir}/Multimedia/%{name}.desktop
+%{_desktopdir}/%{name}.desktop
