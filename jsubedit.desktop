@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=jSubEdit
+Comment="just SubEdit" - subtitles editor
+Comment[pl]="just SubEdit" - edytor napisow do filmow
+Exec=jsubedit
+Icon=
+Terminal=false
+MultipleArgs=false
+Type=Application
+# vi: encoding=utf-8
