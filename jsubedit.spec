@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 only for subtitles edition.
 
 %description -l pl
-"just SubEdit" jest linuxow± wersj± programu SubEdit-Player. S³u¿y on
+"just SubEdit" jest linuksow± wersj± programu SubEdit-Player. S³u¿y on
 wy³±cznie do edycji napisów.
 
 %prep
