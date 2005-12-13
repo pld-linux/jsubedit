@@ -9,7 +9,7 @@ Name:		jsubedit
 Version:	0.2
 Release:	1
 License:	GPL v2
-Group:		Applications/Editors		
+Group:		Applications/Editors
 Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}-%{version}.tar.gz
 # Source0-md5:	e4201661bc61c99d7cd172740329334d
 URL:		http://subedit.prv.pl/polish/information.html
