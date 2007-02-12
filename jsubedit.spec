@@ -4,7 +4,7 @@
 # - home page has only 0.1 version available
 # - program only in polish!
 Summary:	SubEdit - subtitles editor
-Summary(pl):	SubEdit - edytor napisów
+Summary(pl.UTF-8):   SubEdit - edytor napisÃ³w
 Name:		jsubedit
 Version:	0.2
 Release:	1
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 "just SubEdit" is the Linux port of SubEdit-Player program. It's meant
 only for subtitles edition.
 
-%description -l pl
-"just SubEdit" jest linuksow± wersj± programu SubEdit-Player. S³u¿y on
-wy³±cznie do edycji napisów.
+%description -l pl.UTF-8
+"just SubEdit" jest linuksowÄ… wersjÄ… programu SubEdit-Player. SÅ‚uÅ¼y on
+wyÅ‚Ä…cznie do edycji napisÃ³w.
 
 %prep
 %setup -q
