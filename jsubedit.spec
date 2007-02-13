@@ -4,7 +4,7 @@
 # - home page has only 0.1 version available
 # - program only in polish!
 Summary:	SubEdit - subtitles editor
-Summary(pl.UTF-8):   SubEdit - edytor napisów
+Summary(pl.UTF-8):	SubEdit - edytor napisów
 Name:		jsubedit
 Version:	0.2
 Release:	1
