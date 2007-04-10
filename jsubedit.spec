@@ -14,7 +14,7 @@ Source0:	http://alfa.imi.pcz.czest.pl/~subedit/polish/download/%{name}-%{version
 # Source0-md5:	e4201661bc61c99d7cd172740329334d
 URL:		http://subedit.prv.pl/polish/information.html
 Vendor:		Artur Sikora <subedit@alfa.imi.pcz.czest.pl>
-BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	qt-devel >= 3:3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %if %{?_with_ra:1}%{!?_with_ra:0}
